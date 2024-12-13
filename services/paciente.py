@@ -7,7 +7,7 @@ async def criar_paciente(paciente: PacienteCreate) -> Paciente:
     novo_paciente = Paciente(
         id=len(fake_db) + 1,
         nome=paciente.nome,
-        data_nascimento=paciente.data_nascimento,
+        data_nacimento=paciente.data_nacimento,
         telefone=paciente.telefone,
         email=paciente.email,
         endereco=paciente.endereco,
@@ -28,7 +28,7 @@ async def atualizar_paciente(id: int, paciente_atualizado: PacienteCreate) -> Op
     paciente = await buscar_paciente_id(id)
     if paciente:
         paciente.nome = paciente_atualizado.nome
-        paciente.data_nascimento = paciente_atualizado.data_nascimento
+        paciente.data_nacimento = paciente_atualizado.data_nacimento
         paciente.telefone = paciente_atualizado.telefone
         paciente.email = paciente_atualizado.email
         paciente.endereco = paciente_atualizado.endereco

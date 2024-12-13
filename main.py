@@ -5,7 +5,7 @@ from routes.consultas import router as consultas_router
 
 app = FastAPI()
 
- # Inclui as rotas
+ 
 app.include_router(paciente_router)
 app.include_router(dentista_router)
 app.include_router(consultas_router)

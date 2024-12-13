@@ -1,0 +1,3 @@
+id,paciente_id,dentista_id,data_hora,status,observacoes
+1,1,1,2024-12-15 09:30:00+00:00,Confirmado,Paciente solicitou anestesia local.
+2,2,2,2024-12-16 14:00:00+00:00,Cancelado,Consulta cancelada pelo paciente.
